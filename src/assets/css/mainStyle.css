@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('../fonts/Kanit-Light.ttf') format('truetype');
+}
+body {
+    font-family: 'Kanit';
+}
+.position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+.text-align-center {
+    text-align: center;
+}
