@@ -110,11 +110,7 @@ export default {
 
     }
   },
-  methods: {
-    backToMain() {
-      this.$router.push({name: 'mainPage'})
-    }
-  },
+  methods: {},
 };
 </script>
 

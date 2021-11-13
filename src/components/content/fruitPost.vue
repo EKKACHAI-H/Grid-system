@@ -13,18 +13,18 @@
           />
         </div>
       </a-tooltip>
-      <div class="set-arrow arrow-left show-arrow-web" @click="slideFruit('left', setFruits)">
+      <div class="set-arrow arrow-left show-arrow-web" @click="slideFruit('ArrowLeft', setFruits)">
         <a-icon type="caret-left" />
       </div>
-      <div class="set-arrow arrow-right show-arrow-web" @click="slideFruit('right', setFruits)">
+      <div class="set-arrow arrow-right show-arrow-web" @click="slideFruit('ArrowRight', setFruits)">
         <a-icon type="caret-right" />
       </div>
     </div>
     <div class="fruit-post-content">
-      <div class="set-arrow arrow-left show-arrow-mobile" @click="slideFruit('left', setFruits)">
+      <div class="set-arrow arrow-left show-arrow-mobile" @click="slideFruit('ArrowLeft', setFruits)">
         <a-icon type="caret-left" />
       </div>
-      <div class="set-arrow arrow-right show-arrow-mobile" @click="slideFruit('right', setFruits)">
+      <div class="set-arrow arrow-right show-arrow-mobile" @click="slideFruit('ArrowRight', setFruits)">
         <a-icon type="caret-right" />
       </div>
       <img :src="setFruits.src" :alt="setFruits.alt" :draggable="false">
@@ -70,12 +70,25 @@ export default {
       setFruits: null
     }
   },
+  created() {
+    let ths = this;
+    document.addEventListener('keydown', function(event) {
+      if (event.key === "Escape") {
+        ths.closeFruitPost(event);
+      }
+      if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+        ths.slideFruit(event.key, ths.setFruits)
+      }
+    });
+  },
   methods: {
     slideFruit(flag, key) {
-      const keyLeft = key.id > 0 ? key.id - 1 : (this.allFruits.length-1);
-      const keyRight = key.id >= (this.allFruits.length-1) ? 0 : key.id + 1;
-      const keyID = flag === 'left' ? keyLeft : keyRight;
-      this.setFruits = this.allFruits[keyID];
+      if (this.setFruits !== null) { 
+        const keyLeft = key.id > 0 ? key.id - 1 : (this.allFruits.length-1);
+        const keyRight = key.id >= (this.allFruits.length-1) ? 0 : key.id + 1;
+        const keyID = flag === 'ArrowLeft' ? keyLeft : keyRight;
+        this.setFruits = this.allFruits[keyID];
+      }
     },
     closeFruitPost(event) {
       if (this.setFruits !== null) {
