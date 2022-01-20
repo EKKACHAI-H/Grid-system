@@ -4,7 +4,7 @@
       <div style="width: 50%;">
         <div id="action-title" class="first-name-text">Hello !!</div>
         <div id="action-title" class="first-name-text">I'm Ekkachai</div>
-        <div id="action-title" class="career-text" style="padding-right: 15%;">Professional Front-end developer(VueJS) </div>
+        <div id="action-title" class="career-text" style="padding-right: 15%;">Professional Front-end developer</div>
       </div>
       <div style="width: 50%;">
         <img src="../../assets/image/125617.jpg" style="width: 100%;" :draggable="false" />
@@ -75,7 +75,7 @@
           <div class="header-content">Skill</div>
           <div class="sub-content">
             <div>- Can be used Vue JS to create web applications</div>
-            <div>- Can use Git</div>
+            <div>- Can be use Git</div>
             <div>- Can be fixed some bugs of teammates</div>
             <div>- friendly with teammates Can discuss and recommend what is good for them to work</div>
             <div>- play guitar</div>
@@ -90,7 +90,7 @@
           <div class="header-content">Skill</div>
           <div class="sub-content">
             <div>- Can be used Vue JS to create web applications</div>
-            <div>- Can use Git</div>
+            <div>- Can be use Git</div>
             <div>- Can be fixed some bugs of teammates</div>
             <div>- friendly with teammates Can discuss and recommend what is good for them to work</div>
             <div>- play guitar</div>
