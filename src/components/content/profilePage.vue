@@ -37,7 +37,7 @@
         <div>
           <div class="header-content">Working Experience</div>
           <div class="sub-content"> 
-            <div>Completed 2 projects, 1 project in development</div>
+            <div>Completed 3 projects</div>
             <div class="text-sub-header"><b>First project:</b> Trailer registration number system</div>
             <div>Front end: VueJS and Back end: Java spring boots</div>
             <div>- Add, edit and delete head vehicle and trailer vehicle information in the table </div>
@@ -45,7 +45,7 @@
             <div class="text-sub-header"><b>Second project:</b> Train schedules system</div>
             <div>Front end: VueJS</div>
             <div>- Make a system to designate where the train will arrive and when it will arrive.</div>
-            <div class="text-sub-header"><b>Third project (developing):</b> Shipping tool system</div>
+            <div class="text-sub-header"><b>Third project:</b> Shipping tool system</div>
             <div>Front end: VueJS</div>
             <div>Web user</div>
             <div style="padding-left: 10px;">
